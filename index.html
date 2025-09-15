@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoundFlow - Streaming de Áudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos adicionais -->
+  <style>
+    body {
+      background-color: #0d0b1d; /* Fundo escuro */
+      color: white; /* Texto branco */
+    }
+    .section-light {
+      background-color: #d6d4f0; /* Fundo claro para contraste */
+      color: #000; /* Texto preto */
+    }
+
+    .btn-pink {
+      background-color: #e75480; /* Cor personalizada para botão */
+      color: white;
+    }
+    .btn-pink:hover {
+      background-color: #c03b63; /* Efeito ao passar o mouse */
+    }
+
+    .card-body{
+      border-bottom-right-radius:10px;   /* Efeito de arendondamento preta card direito */
+      border-bottom-left-radius:10px;    /* Efeito de arendondamento preta card esquerdo */
+      border: none;
+    }
+
+
+  </style>
+</head>
+<body>
+                 <!-- inicio  Navbar -->
+   <nav  class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top">
+    <a class="navbar-brand" href="index.html"> <!-- Logo -->
+     <img src="Imagem site/Logo2.jpg" width="175" height="65"> <!-- Logo -->
+    </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span> <!-- navbar 3 risquinho -->
+                </button>
+    <div class="collapse navbar-collapse" id="menu"> <!-- navebar -->
+                
+      <ul class="navbar-nav me-auto"> <!-- alinhar a direita -->
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html" >Início</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#top3">Top 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#estilos">Explore os Estilos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+        </li>
+      </ul>
+           
+      <form class="d-flex ms-3">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar"> <!-- campo de pesquisa -->
+        <button class="btn btn-outline-light">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  
+                 <!-- banner principal do site -->
+  <section class="text-center text-lg-start p-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        
+        <h1 class="fw-bold text-danger"> <!-- titulo -->
+            Top 3 Mais Tocadas
+        </h1> 
+        
+        <p class="lead"> <!-- subtitulo -->
+            As músicas que todo mundo está ouvindo agora.
+        </p> 
+        
+        <p>
+            Descubra os hits que estão dominando as playlists no momento!
+        </p> 
+
+        <a href="index.html" class="btn btn-pink btn-lg"> <!-- botão do banner -->
+            Ouça agora
+        </a>  
+      </div>
+
+      <div class="col-lg-6 text-center">
+        
+        <img src="Imagem site/img banner.jpg" class="img-fluid rounded"> <!-- imagem do banner -->
+      </div>
+    </div>
+  </section>
+
+
+<section id="top3">
+  
+</section>
+                  <!-- parte do top 3 categorias -->
+  <section  class="section-light text-center py-5  p-5 mt-5 ">
+    <div class="container"> 
+        <div class="container-fluid">   
+
+
+    <h2 class="fw-bold text-danger">
+        Top 3 Mais Tocadas
+    </h2> 
+    <p class="lead">
+        As músicas que todo mundo está ouvindo agora.
+    </p> 
+    <p>
+        Descubra os hits que estão dominando as playlists e conquistando os ouvintes.
+    </p> 
+
+                <!-- Cards do top3 mais tocadas -->
+    <div class="row justify-content-center">
+      <div class="col-md-3"> <!-- coluna -->
+        <div class="card shadow"> <a class="nav-link" href="#ftmodao2"> 
+          <img src="Imagem site/Modão/Modão2.jpg" class="card-img-top" ></a>
+          <div class="card-body text-center bg-dark text-white">
+            <h5 class="card-title">Modão</h5>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-3">
+        <div class="card shadow"> <a class="nav-link" href="#ftlouvor2"> 
+          <img src="Imagem site/Louvor/Louvor2.jpg" class="card-img-top"></a>
+          <div class="card-body text-center bg-dark text-white">
+          <h5 class="card-title">Louvor</h5>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="card shadow"> <a class="nav-link" href="#ftrap2"> 
+          <img src="Imagem site/Rap/Rap2.jpg" class="card-img-top" > </a>
+          <div class="card-body text-center bg-dark text-white">
+            <h5 class="card-title">RAP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+ </section>
+
+
+<section id="estilos">
+  
+</section>
+
+
+<!-- estilos das musicas -->
+<section class="text-center py-5 p-5 mt-5">
+  <div class="container">
+    <div class="container-fluid">
+
+      <!-- Título da seção -->
+      <h2 class="fw-bold text-danger">
+        Explore os Estilos e Descubra Novos Sons
+      </h2>
+      <p class="lead">
+        Do rap ao country, aqui você encontra os álbuns e faixas que estão marcando época.
+      </p>
+
+      <!-- ====================== LINHA 1 ====================== -->
+      <div class="row text-center mb-5">
+        <!-- COLUNA 1: COUNTRY -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Country</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/country/country1.jpg" class="img-fluid rounded shadow music-card" data-audio="country1" alt="Country 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/country/country2.jpg" class="img-fluid rounded shadow music-card" data-audio="country2" alt="Country 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1" id="ftlouvor2">“Estrada da Vida”</p>
+          <p class="mb-2">“Luar do Sertão”</p>
+        </div>
+
+        <!-- COLUNA 2: METAL -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Metal</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Metal/Metal1.jpg" class="img-fluid rounded shadow music-card" data-audio="metal1" alt="Metal 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Metal/Metal2.jpg" class="img-fluid rounded shadow music-card" data-audio="metal2" alt="Metal 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1">“Guitarras em Fúria”</p>
+          <p class="mb-2">“Som das Trevas”</p>
+        </div>
+
+        <!-- COLUNA 3: ELETRÔNICA (EDM) -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Eletrônica (EDM)</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Eletrônica (EDM)/Eletrônica (EDM)1.jpg" class="img-fluid rounded shadow music-card" data-audio="edm1" alt="EDM 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Eletrônica (EDM)/Eletrônica (EDM)2.jpg" class="img-fluid rounded shadow music-card" data-audio="edm2" alt="EDM 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1" id="ftmodao2">“Vibração Noturna”</p>
+          <p class="mb-2">“Som do Amanhã”</p>
+        </div>
+      </div>
+
+      <!-- ====================== LINHA 2 ====================== -->
+      <div class="row text-center mb-5">
+        <!-- COLUNA 1: LOUVOR -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Louvor</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Louvor/Louvor1.jpg" class="img-fluid rounded shadow music-card" data-audio="louvor1" alt="Louvor 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Louvor/Louvor2.jpg" class="img-fluid rounded shadow music-card" data-audio="louvor2" alt="Louvor 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1">“No Altar”</p>
+          <p class="mb-2">“Luz que Guia”</p>
+        </div>
+
+        <!-- COLUNA 2: POP -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Pop</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Pop/Pop1.jpg" class="img-fluid rounded shadow music-card" data-audio="pop1" alt="Pop 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Pop/Pop2.jpg" class="img-fluid rounded shadow music-card" data-audio="pop2" alt="Pop 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1" id="ftrap2">“Noite de Estrelas”</p>
+          <p class="mb-2">“Balanço Perfeito”</p>
+        </div>
+            
+        <!-- COLUNA 3: MODÃO -->
+        <div class="col-md-4" >
+          <h4 class="fw-bold text-white mb-3" >Modão</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Modão/Modão1.jpg" class="img-fluid rounded shadow music-card" data-audio="modao1" alt="Modão 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Modão/Modão2.jpg" class="img-fluid rounded shadow music-card" data-audio="modao2" alt="Modão 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1">“Saudade na Estrada”</p>
+          <p class="mb-2">“Lua do Sertão”</p>
+        </div>
+      </div>
+
+      <!-- ====================== LINHA 3 ====================== -->
+      <div class="row text-center">
+        <!-- COLUNA 1: R&B -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">R&B</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/R&B/R&B1.jpg" class="img-fluid rounded shadow music-card" data-audio="rb1" alt="R&B 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/R&B/R&B2.jpg" class="img-fluid rounded shadow music-card" data-audio="rb2" alt="R&B 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1">“Whispers in the Dark”</p>
+          <p class="mb-2">“Falling into You”</p>
+        </div>
+
+        <!-- COLUNA 2: RAP -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">RAP</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/RAP/RAP1.jpg" class="img-fluid rounded shadow music-card" data-audio="rap1" alt="RAP 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/RAP/RAP2.jpg" class="img-fluid rounded shadow music-card" data-audio="rap2" alt="RAP 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1">“Códigos da Cidade”</p>
+          <p class="mb-2">“Voz da Rua”</p>
+        </div>
+
+        <!-- COLUNA 3: REGGAE -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Reggae</h4>
+          <div class="row g-2">
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Reggae/Reggae1.jpg" class="img-fluid rounded shadow music-card" data-audio="reggae1" alt="Reggae 1" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+            <div class="col-6 position-relative">
+              <img src="Imagem site/Reggae/Reggae2.jpg" class="img-fluid rounded shadow music-card" data-audio="reggae2" alt="Reggae 2" style="cursor:pointer;">
+              <span class="play-icon">▶️</span>
+            </div>
+          </div>
+          <p class="mt-3 mb-1">“Sol da Liberdade”</p>
+          <p class="mb-2">“Vibração do Mar”</p>
+        </div>
+      </div>
+
+      <!-- ÁUDIOS -->
+      <audio id="country1" src="musicas/country.mp3"></audio>
+      <audio id="country2" src="musicas/country2.mp3"></audio>
+
+      <audio id="metal1" src="musicas/metal.mp3"></audio>
+      <audio id="metal2" src="musicas/metal2.mp3"></audio>
+
+      <audio id="edm1" src="musicas/Eletronica.mp3"></audio>
+      <audio id="edm2" src="musicas/Eletronica2.mp3"></audio>
+
+      <audio id="louvor1" src="musicas/louvor.mp3"></audio>
+      <audio id="louvor2" src="musicas/louvor2.mp3"></audio>
+
+      <audio id="pop1" src="musicas/pop.mp3"></audio>
+      <audio id="pop2" src="musicas/pop2.mp3"></audio>
+
+      <audio id="modao1" src="musicas/modao.mp3"></audio>
+      <audio id="modao2" src="musicas/modao2.mp3"></audio>
+
+      <audio id="rb1" src="musicas/R&B.mp3"></audio>
+      <audio id="rb2" src="musicas/R&B2.mp3"></audio>
+
+      <audio id="rap1" src="musicas/rap.mp3"></audio>
+      <audio id="rap2" src="musicas/rap2.mp3"></audio>
+
+      <audio id="reggae1" src="musicas/reggae.mp3"></audio>
+      <audio id="reggae2" src="musicas/reggae2.mp3"></audio>
+
+    </div>
+  </div>
+</section>
+
+<!-- ESTILO DOS ÍCONES -->
+<style>
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  .music-card.playing + .play-icon {
+    opacity: 1;
+  }
+</style>
+
+<!-- JS: Controle Play/Pause -->
+<script>
+  const cards = document.querySelectorAll('.music-card');
+  let currentAudio = null;
+  let currentCard = null;
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const audioId = card.getAttribute('data-audio');
+      const audio = document.getElementById(audioId);
+      const icon = card.nextElementSibling;
+
+      // Se clicou na mesma imagem que está tocando → pausa
+      if (currentAudio === audio) {
+        audio.pause();
+        card.classList.remove('playing');
+        icon.textContent = "▶️";
+        currentAudio = null;
+        currentCard = null;
+        return;
+      }
+
+      // Pausa áudio anterior
+      if (currentAudio) {
+        currentAudio.pause();
+        if (currentCard) {
+          currentCard.classList.remove('playing');
+          currentCard.nextElementSibling.textContent = "▶️";
+        }
+      }
+
+      // Toca novo áudio
+      audio.currentTime = 0;
+      audio.play();
+      card.classList.add('playing');
+      icon.textContent = "⏸️";
+
+      currentAudio = audio;
+      currentCard = card;
+    });
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
